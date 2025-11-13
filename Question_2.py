@@ -2,9 +2,7 @@ import math
 import random
 import os
 
-# ============================================================================
 # PROBLEM 1: CLOSEST PAIR OF POINTS (Divide and Conquer)
-# ============================================================================
 
 def distance(p1, p2):
     """Calculate Euclidean distance between two points"""
@@ -100,9 +98,7 @@ def closest_pair_of_points(points):
     
     return closest_pair_recursive(px, py)
 
-# ============================================================================
 # PROBLEM 2: INTEGER MULTIPLICATION (Karatsuba Algorithm)
-# ============================================================================
 
 def karatsuba(x, y):
     """
@@ -133,9 +129,7 @@ def integer_multiplication(x, y):
     """Wrapper function for Karatsuba multiplication"""
     return karatsuba(x, y)
 
-# ============================================================================
 # TEST DATA GENERATION
-# ============================================================================
 
 def generate_points_dataset(num_points, min_coord=-1000, max_coord=1000):
     """Generate random points for closest pair problem"""
@@ -188,9 +182,7 @@ def save_datasets():
     
     print("\nAll datasets generated successfully!")
 
-# ============================================================================
 # TESTING THE ALGORITHMS
-# ============================================================================
 
 def test_closest_pair():
     """Test closest pair algorithm with sample data"""
@@ -233,9 +225,7 @@ def test_integer_multiplication():
         print(f"Expected result:  {expected}")
         print(f"Match: {result == expected}")
 
-# ============================================================================
 # MAIN EXECUTION
-# ============================================================================
 
 if __name__ == "__main__":
     print("DIVIDE AND CONQUER ALGORITHMS IMPLEMENTATION")
