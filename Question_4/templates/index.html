@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D&C Algorithms Visualizer</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            margin: 0;
+            padding: 40px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .btn {
+            padding: 10px 14px;
+            border: none;
+            border-radius: 6px;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover { background: #1d4ed8; }
+
+        pre {
+            background: #111;
+            color: #0f0;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            max-height: 200px;
+            overflow-y: scroll;
+        }
+        canvas {
+            width: 100%;
+            height: 400px;
+            border: 2px solid #333;
+            margin-top: 15px;
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+    <h1>Divide & Conquer Algorithms Visualizer</h1>
+
+    <!-- ================= CLOSEST PAIR SECTION ================= -->
+    <div class="card">
+        <h2>Closest Pair of Points</h2>
+
+        <form id="closestForm">
+            <input type="file" name="file" required accept=".txt"><br><br>
+            <button type="submit" class="btn">Run Algorithm</button>
+        </form>
+
+        <div id="closestResult"></div>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <!-- ================= KARATSUBA SECTION ================= -->
+    <div class="card">
+        <h2>Karatsuba Multiplication</h2>
+
+        <form id="karatsubaForm">
+            <input type="file" name="file" required accept=".txt"><br><br>
+            <button type="submit" class="btn">Run Algorithm</button>
+        </form>
+
+        <div id="karaResult"></div>
+    </div>
+
+</div>
+
+<script>
+document.getElementById("closestForm").onsubmit = async (e) => {
+    e.preventDefault();
+    let form = new FormData(e.target);
+
+    let res = await fetch("/closest", { method: "POST", body: form });
+    let data = await res.json();
+
+    document.getElementById("closestResult").innerHTML = `
+        <h3>Result</h3>
+        <p><b>Closest Pair:</b> ${JSON.stringify(data.pair)}</p>
+        <p><b>Distance:</b> ${data.distance}</p>
+        <p><b>Execution Time:</b> ${data.time} sec</p>
+        ${
+            data.steps?.length
+            ? `<h3>Steps</h3><pre>${data.steps.join("\n")}</pre>`
+            : ""
+        }
+    `;
+
+    drawPoints(data);
+}
+
+function drawPoints(data) {
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    let pts = data.pair;
+    if (!pts) return;
+
+    ctx.fillStyle = "blue";
+    ctx.beginPath();
+    ctx.arc(pts[0][0]*50, 400-pts[0][1]*50, 6, 0, Math.PI*2);
+    ctx.arc(pts[1][0]*50, 400-pts[1][1]*50, 6, 0, Math.PI*2);
+    ctx.fill();
+
+    ctx.strokeStyle = "red";
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(pts[0][0]*50, 400-pts[0][1]*50);
+    ctx.lineTo(pts[1][0]*50, 400-pts[1][1]*50);
+    ctx.stroke();
+}
+
+document.getElementById("karatsubaForm").onsubmit = async (e) => {
+    e.preventDefault();
+    let form = new FormData(e.target);
+
+    let res = await fetch("/karatsuba", { method: "POST", body: form });
+    let data = await res.json();
+
+    document.getElementById("karaResult").innerHTML = `
+        <h3>Karatsuba Result</h3>
+        <p><b>Input:</b> ${data.a} × ${data.b}</p>
+        <p><b>Result:</b> ${data.result}</p>
+        <p><b>Correct?</b> ${data.verified}</p>
+        <p><b>Execution Time:</b> ${data.time} sec</p>
+        ${
+            data.steps?.length
+            ? `<h3>Steps</h3><pre>${data.steps.join("\n")}</pre>`
+            : ""
+        }
+    `;
+}
+</script>
+
+</body>
+</html>
