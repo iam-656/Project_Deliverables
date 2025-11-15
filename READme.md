@@ -1,2 +1,1 @@
-![Closest Pair Output](Closest_Pair_output.png)\
-![Karatsuba Multiplication Output](Karatsuba_Multiplication_output.png)
+![Question 4 - Output](Question 4 - UI.png)
