@@ -1,0 +1,103 @@
+KARATSUBA INTEGER MULTIPLICATION - RESULTS
+================================================================================
+
+Dataset: integer_mult_input_1.txt
+First integer digits: 122
+Second integer digits: 122
+Result digits: 244
+First 100 digits of result: 4250234943072957148803396531668136147844832574390512997234019840590329407671038471691218668657582556...
+Last 100 digits of result: ...3705272058370124147541985332961418586256467802156957256569307640359806641716462456279987031248203048
+Verification: PASSED
+Execution time: 5.5053 ms
+--------------------------------------------------------------------------------
+
+Dataset: integer_mult_input_10.txt
+First integer digits: 378
+Second integer digits: 378
+Result digits: 756
+First 100 digits of result: 2931544038533700727527906477878794235407063093101625308662217793216429144979636051116768247266523187...
+Last 100 digits of result: ...3754239607674064924463846258757214048378890523192407345491382781766981844741592047341123786575013803
+Verification: PASSED
+Execution time: 40.0891 ms
+--------------------------------------------------------------------------------
+
+Dataset: integer_mult_input_2.txt
+First integer digits: 199
+Second integer digits: 199
+Result digits: 397
+First 100 digits of result: 9602175325772222797032995364072163749654137510598561529668861860710880403548495865014516592139859866...
+Last 100 digits of result: ...2015617530767311208159501668611087052198595095453325081673497002653522837438181677490592615785322424
+Verification: PASSED
+Execution time: 6.7079 ms
+--------------------------------------------------------------------------------
+
+Dataset: integer_mult_input_3.txt
+First integer digits: 214
+Second integer digits: 214
+Result digits: 428
+First 100 digits of result: 1497688003425348927646627328095058583601694318449771448716773768080301941521939963525015887592926272...
+Last 100 digits of result: ...4130948201994343771658690606256661168128343187972836224124682268172239096646649755437976552530348718
+Verification: PASSED
+Execution time: 10.6394 ms
+--------------------------------------------------------------------------------
+
+Dataset: integer_mult_input_4.txt
+First integer digits: 341
+Second integer digits: 341
+Result digits: 682
+First 100 digits of result: 1765272749906678639960042557528630521764544240072458850144022180006229348820094979662127473728247397...
+Last 100 digits of result: ...4909083662615064296745213329441001442846390344976837280797494979178196437385158141212136185050595859
+Verification: PASSED
+Execution time: 35.3405 ms
+--------------------------------------------------------------------------------
+
+Dataset: integer_mult_input_5.txt
+First integer digits: 440
+Second integer digits: 440
+Result digits: 880
+First 100 digits of result: 2641366300414973234994969275442551405411351586728505776947787252341157853462138850062314667291773678...
+Last 100 digits of result: ...0760090529918194811981305739807416441407291725354364215777778816049629440092201071489453516714311079
+Verification: PASSED
+Execution time: 23.3314 ms
+--------------------------------------------------------------------------------
+
+Dataset: integer_mult_input_6.txt
+First integer digits: 120
+Second integer digits: 120
+Result digits: 240
+First 100 digits of result: 3032584955131363825300255462567749321759028330568003411897986363653988361848478238029833809252420947...
+Last 100 digits of result: ...7410129285844748778998236929223530220569534189765932716553619954268420074672253452606445179752381851
+Verification: PASSED
+Execution time: 8.9920 ms
+--------------------------------------------------------------------------------
+
+Dataset: integer_mult_input_7.txt
+First integer digits: 159
+Second integer digits: 159
+Result digits: 318
+First 100 digits of result: 2953172183871207498275146808414402441191659899133931173632126832674045667189121224674617598951794482...
+Last 100 digits of result: ...9680280650719340213498580082697315574173514085545534306646425783155053842154564805475553841037094522
+Verification: PASSED
+Execution time: 17.5195 ms
+--------------------------------------------------------------------------------
+
+Dataset: integer_mult_input_8.txt
+First integer digits: 181
+Second integer digits: 181
+Result digits: 362
+First 100 digits of result: 3842193356504698773787394387568156147824064595750257365369047534715928719341040130967089042393500166...
+Last 100 digits of result: ...6294308058397593914783990129715366594156894853807585762417214083509560142342847974164413798856150128
+Verification: PASSED
+Execution time: 13.9151 ms
+--------------------------------------------------------------------------------
+
+Dataset: integer_mult_input_9.txt
+First integer digits: 257
+Second integer digits: 257
+Result digits: 514
+First 100 digits of result: 5226241395498608220551780001028069996151815906461173701908360809070861983350632429431104478005875272...
+Last 100 digits of result: ...6188442547866072432925238030602678731460348603427036777756825860294154992021407943892115365808229005
+Verification: PASSED
+Execution time: 17.2131 ms
+--------------------------------------------------------------------------------
+

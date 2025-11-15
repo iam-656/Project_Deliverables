@@ -1,0 +1,93 @@
+CLOSEST PAIR OF POINTS - RESULTS
+================================================================================
+
+Dataset: closest_pair_input_1.txt
+Number of points: 150
+Closest pair:
+  Point 1: (8.672762, 314.725903)
+  Point 2: (9.823737, 311.106284)
+Distance: 3.798208
+Execution time: 2.0986 ms
+--------------------------------------------------------------------------------
+
+Dataset: closest_pair_input_10.txt
+Number of points: 800
+Closest pair:
+  Point 1: (-860.974066, -910.054113)
+  Point 2: (-860.000957, -909.472755)
+Distance: 1.133542
+Execution time: 14.2784 ms
+--------------------------------------------------------------------------------
+
+Dataset: closest_pair_input_2.txt
+Number of points: 200
+Closest pair:
+  Point 1: (45.936967, -839.306526)
+  Point 2: (47.560454, -836.044675)
+Distance: 3.643540
+Execution time: 3.3004 ms
+--------------------------------------------------------------------------------
+
+Dataset: closest_pair_input_3.txt
+Number of points: 300
+Closest pair:
+  Point 1: (-224.101791, 752.728885)
+  Point 2: (-223.212651, 753.940779)
+Distance: 1.503083
+Execution time: 5.0347 ms
+--------------------------------------------------------------------------------
+
+Dataset: closest_pair_input_4.txt
+Number of points: 500
+Closest pair:
+  Point 1: (744.596268, 991.818173)
+  Point 2: (745.949501, 993.101576)
+Distance: 1.865037
+Execution time: 10.7071 ms
+--------------------------------------------------------------------------------
+
+Dataset: closest_pair_input_5.txt
+Number of points: 1000
+Closest pair:
+  Point 1: (497.356332, -576.333892)
+  Point 2: (496.066647, -575.646626)
+Distance: 1.461377
+Execution time: 27.5900 ms
+--------------------------------------------------------------------------------
+
+Dataset: closest_pair_input_6.txt
+Number of points: 120
+Closest pair:
+  Point 1: (-473.541564, 27.702445)
+  Point 2: (-466.241041, 16.814516)
+Distance: 13.108952
+Execution time: 2.2314 ms
+--------------------------------------------------------------------------------
+
+Dataset: closest_pair_input_7.txt
+Number of points: 180
+Closest pair:
+  Point 1: (343.625457, -449.125818)
+  Point 2: (345.810058, -447.555371)
+Distance: 2.690499
+Execution time: 1.5910 ms
+--------------------------------------------------------------------------------
+
+Dataset: closest_pair_input_8.txt
+Number of points: 250
+Closest pair:
+  Point 1: (632.606284, -290.857377)
+  Point 2: (633.191054, -289.802837)
+Distance: 1.205824
+Execution time: 3.0315 ms
+--------------------------------------------------------------------------------
+
+Dataset: closest_pair_input_9.txt
+Number of points: 400
+Closest pair:
+  Point 1: (-724.999418, -907.407566)
+  Point 2: (-720.841865, -902.586910)
+Distance: 6.365844
+Execution time: 6.2602 ms
+--------------------------------------------------------------------------------
+
