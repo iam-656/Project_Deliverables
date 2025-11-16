@@ -48,7 +48,7 @@ bash
 
 pip install flask
 
-python integrated_app.py
+python closestPair_and_integerMultiplication.py
 
 \`\`\`
 
