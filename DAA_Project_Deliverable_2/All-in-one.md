@@ -85,3 +85,5 @@ project/
 └── integer_mult_results.txt _\# After applying_
 
 \`\`\`
+
+![Closest pair and Integer Multiplication UI](Divide_and_Conquer_UI.png)
